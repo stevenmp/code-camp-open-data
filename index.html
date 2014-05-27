@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Chemin vers CSS -->
+    <link href="bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+
+        <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+    google.load('visualization', '1', {'packages': ['geomap']});
+    google.setOnLoadCallback(drawMap);
+    var stat = "Hospital bed density";
+    var array = [
+        ['Country',stat],
+        /*Afrique*/
+        ['Algeria',1],
+        ['Angola',1],
+        ['Benin',1],
+        ['Botswana',1],
+        ['Burkina Faso',1],
+        ['Burundi',1],
+        ['Cameroon',1],
+        ['Cabo Verde',1],
+        ['Central African Republic',1],
+        ['Chad',1],
+        ['Comoros',1],
+        ['Ivory Coast',1],
+        ['CD',1],
+        ['CG',1],
+        ['Djibouti',1],
+        ['Egypt',1],
+        ['Equatorial Guinea',1],
+        ['Eritrea',1],
+        ['Ethiopia',1],
+        ['Gabon',1],
+        ['Gambia',1],
+        ['Ghana',1],
+        ['Guinea',1],
+        ['Guinea-Bissau',1],
+        ['Kenya',1],
+        ['Lesotho',1],
+        ['Liberia',1],
+        ['Libya',1],
+        ['Madagascar',1],
+        ['Malawi',1],
+        ['Mali',1],
+        ['Mauritania',1],
+        ['Mauritus',1],
+        ['Morocco',1],
+        ['Mozambique',1],
+        ['Namibia',1],
+        ['Niger',1],
+        ['Nigeria',1],
+        ['Rwanda',1],
+        ['Sao Tome And Principe',1],
+        ['Senegal',1],
+        ['Seychelles',1],
+        ['Sierra Leone',1],
+        ['Somalia',1],
+        ['South Africa',1],
+        ['SS',1],
+        ['Sudan',1],
+        ['Swaziland',1],
+        ['Tanzania',1],
+        ['Togo',1],
+        ['Tunisia',1],
+        ['Uganda',1],
+        ['Western Sahara',1],
+        ['Zambia',1],
+        ['Zimbabwe',1],
+        /*Europe*/
+        ['Albania',1],
+        ['Andorra',1],
+        ['Austria',1],
+        ['Belarus',1],
+        ['Belgium',1],
+        ['Bosnia And Herzegovina',1],
+        ['Bulgaria',1],
+        ['Croatia',1],
+        ['Cyprus',1],
+        ['Czech Republic',1],
+        ['Denmark',1],
+        ['Estonia',1],
+        ['Faroe Islands',1],
+        ['Finland',1],
+        ['France',1],
+        ['Germany',1],
+        ['Greece',1],
+        ['Hungary',1],
+        ['Iceland',1],
+        ['Ireland',1],
+        ['Italy',1],
+        ['KO',1],
+        ['Latvia',1],
+        ['Liechtenstein',1],
+        ['Lithuania',1],
+        ['Luxembourg',1],
+        ['Macedonia',1],
+        ['Malta',1],
+        ['Moldova',1],
+        ['Monaco',1],
+        ['Montenegro',1],
+        ['Netherlands',1],
+        ['Norway',1],
+        ['Poland',1],
+        ['Portugal',1],
+        ['Romania',1],
+        ['San Marino',1],
+        ['Serbia',1],
+        ['Slovakia',1],
+        ['Slovenia',1],
+        ['Spain',1],
+        ['SJ',1],
+        ['Sweden',1],
+        ['Switzerland',1],
+        ['Ukraine',1],
+        ['United Kingdom',1],
+        /*North America*/
+        ['Bermuda',1],
+        ['Canada',1],
+        ['Clipperton Island',1],
+        ['Greenland',1],
+        ['Mexico',1],
+        ['United States',1],
+        ['Anguilla',1],
+        ['Antigua And Barbuda',1],
+        ['Aruba',1],
+        ['Bahamas',1],
+        ['Barbados',1],
+        ['Belize',1],
+        ['Costa Rica',1],
+        ['Cuba',1],
+        ['Domimica',1],
+        ['DO',1],
+        ['El Salvador',1],
+        ['Grenada',1],
+        ['Guatemala',1],
+        ['Haiti',1],
+        ['Honduras',1],
+        ['Jamaica',1],
+        ['Nicaragua',1],
+        ['Panama',1],
+        ['Saint Kitts And Nevis',1],
+        ['Saint Lucia',1],
+        ['Saint Martin',1],
+        ['Trinidad And Tobago',1],
+        ['Virgin Islands',1],
+        /*South America*/
+        ['Argentina',1],
+        ['Bolivia',1],
+        ['Brazil',1],
+        ['Chile',1],
+        ['Colombia',1],
+        ['Ecuador',1],
+        ['Falkland Islands',1],
+        ['French Guiana',1],
+        ['Guyana',1],
+        ['Paraguay',1],
+        ['Peru',1],
+        ['Suriname',1],
+        ['Uruguay',1],
+        ['Venezuela',1],
+        /*Middle East*/
+        ['Armenia',1],
+        ['Azerbaijan',1],
+        ['Bahrain',1],
+        ['Gaza Strip',1],
+        ['Georgia',1],
+        ['Iran',1],
+        ['Iraq',1],
+        ['Israel',1],
+        ['Jordan',1],
+        ['Kuwait',1],
+        ['Labanon',1],
+        ['Oman',1],
+        ['Qatar',1],
+        ['Saudi Arabia',1],
+        ['Syria',1],
+        ['Turkey',1],
+        ['United Arab Emirates',1],
+        ['West Bank',1],
+        ['Yemen',1],
+        /*Central Asia*/
+        ['Kazakhstan',1],
+        ['Kyrgyzstan',1],
+        ['Russia',1],
+        ['Tajikistan',1],
+        ['Turkmenistan',1],
+        ['Uzbekistan',1],
+        /*South Asia*/
+        ['Afghanistan',1],
+        ['Bangladesh',1],
+        ['Bhutan',1],
+        ['India',1],
+        ['Maldives',1],
+        ['Nepal',1],
+        ['Pakistan',1],
+        ['Sri Lanka',1],
+        /*East & Southeast Asia*/
+        ['Brunei',1],
+        ['Myanmar',1],
+        ['Cambodia',1],
+        ['China',1],
+        ['Hong Kong',1],
+        ['Indonesia',1],
+        ['Japan',1],
+        ['North Korea',1],
+        ['South Korea',1],
+        ['Laos',1],
+        ['Macau',1],
+        ['Malaysia',1],
+        ['Mongolia',1],
+        ['Papua New Guinea',1],
+        ['Philippines',1],
+        ['Singapore',1],
+        ['Taiwan',1],
+        ['Thailand',1],
+        ['TL',1],
+        ['Vietnam',1],
+        /*Oceania*/
+        ['Australia',1],
+        ['Fiji',1],
+        ['New Caledonia',1],
+        ['New Zealand',1],
+        ['Solomon Islands',1],
+        ['Vanuatu',1]
+      ]
+    function drawMap() {
+      var data = google.visualization.arrayToDataTable(array);
+
+      var options = {};
+      options['dataMode'] = 'regions';
+      options['width'] = '1174px';
+      options['height'] = '720px';
+
+      var container = document.getElementById('map_canvas');
+      var geomap = new google.visualization.GeoMap(container);
+      geomap.draw(data, options);
+  };
+  </script>
+  </head>
+
+  <body>
+
+    <ul id="navigation" class="nav-main">
+        <li><img src="Mondevert.png"></li>
+        <li><a href="index.html">Accueil</a></li>
+        <li class="list"><a href="#">Information</a>
+            <ul class="nav-sub">
+                <li><a href="couverturemedical.html">Couverture médicale</a></li>
+                <li><a href="obesite.html">IMC et l'obésité</a></li>
+                <li><a href="tabac.html">Le tabac</a></li>
+            </ul>
+        </li>
+        <li class="list"><a href="#">Lien utile</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="container">
+      <div class="starter-template">
+        <div class="highlight">
+            <select name="type-maladie" class="bard">
+              <option value="examens">Examens avec Imagerie par Résonance Magnétique (IRM), pour 1 000 personnes, en hôpitaux, en ambulatoire, et total</option>
+              <option value="tabac">Consommation de tabac, % de la population adulte qui déclare fumer quotidiennement</option>
+              <option value="mortalite infantile">Taux de mortalité infantile, décès pour 1 000 naissances vivantes</option>
+              <option value="depenses publique">Dépenses publiques de santé, % des dépenses totales de santé</option>
+              <option value="lits hopitaux">Nombre total de lits d'hôpitaux pour 1000 habitants</option>
+              <option value="depenses social">Dépenses sociales publiques de santé, % du PIB</option>
+              <option value="medecins">Médecins, densité pour 1 000 habitants</option>
+              <option value="depense totales tete">Dépenses totales de santé, par tête</option>
+              <option value="surpoids hommes">Surpoids ou obésité des hommes</option>
+              <option value="surpoids femmes">Surpoids ou obésité des femmes</option>
+              <option value="depense totales">Dépenses totales de santé</option>
+              <option value="couverture">Couverture medical</option>
+            </select>
+          <div id='map_canvas'></div>
+        </div>
+      </div>
+
+    </div><!-- /.container -->
+
+    <!-- Placed at the end of the document so the pages load faster     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>-->
+    <footer>
+      <div id="contacte">
+        <h1>Contactez-nous</h1>
+          <ul>  
+            <li><a href="#">Mail</a></li>
+            <li><a href="#">Numero</a></li>
+          </ul>
+      </div>
+      <div id="RS">
+        <h1>Réseaux sociaux</h1>
+          <ul>
+            <li><a href="#">Facbook</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>  
+      <!--<div id="dedi">
+        <ul>Design by Steven MEPHANE</ul>
+      </div>-->
+    </footer>
+  </body>
+</html>
